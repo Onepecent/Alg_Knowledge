@@ -38,5 +38,6 @@ dfs && bfs
 ----
 
   <h4>22. 括号生成 : 典型的卡特兰数问题(https://leetcode.cn/circle/article/lWYCzv/)<h4> <br />
+  https://blog.csdn.net/qq_30115697/article/details/88906534
 
 ----
