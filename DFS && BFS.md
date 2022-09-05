@@ -30,3 +30,8 @@ dfs && bfs
 剑指 Offer 32 - II. 从上到下打印二叉树 II	简单	🤩🤩🤩	 <br />
 剑指 Offer 32 - III. 从上到下打印二叉树 III	中等	🤩🤩🤩🤩🤩	 <br />
 剑指 Offer 34. 二叉树中和为某一值的路径	中等	🤩🤩🤩🤩🤩	 <br />
+
+----
+
+<h1>DFS<h1> <br />
+22. 括号生成 : 典型的卡特兰数问题(https://leetcode.cn/circle/article/lWYCzv/) <br />
