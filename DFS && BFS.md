@@ -33,5 +33,10 @@ dfs && bfs
 
 ----
 
-<h1>DFS<h1> <br />
-22. 括号生成 : 典型的卡特兰数问题(https://leetcode.cn/circle/article/lWYCzv/) <br />
+<h1> DFS <h1>
+
+----
+
+  <h4>22. 括号生成 : 典型的卡特兰数问题(https://leetcode.cn/circle/article/lWYCzv/)<h4> <br />
+
+----
