@@ -34,6 +34,7 @@ dfs && bfs
 ----
 
 <h1> DFS <h1>
+  先去理解前中后序遍历一棵二叉树的意义
 
 ----
 
@@ -41,3 +42,5 @@ dfs && bfs
   https://blog.csdn.net/qq_30115697/article/details/88906534
 
 ----
+
+    dfs理解：323.无向图中连通分量的数目
