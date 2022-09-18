@@ -45,3 +45,10 @@ dfs && bfs
 ----
 
 *dfs理解：323.无向图中连通分量的数目*
+
+  
+----
+ 
+  （有能力的可以buy）
+ dfs这里推荐leecode Book ：https://leetcode.cn/leetbook/read/dfs/
+ 
