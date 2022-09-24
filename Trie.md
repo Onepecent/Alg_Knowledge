@@ -117,4 +117,64 @@ class MapSum {
     }
 }
 ```
+#### [648. 单词替换](https://leetcode.cn/problems/replace-words/)
+
+```java
+class Solution {
+    public String replaceWords(List<String> dictionary, String sentence) {
+        int len = sentence.length();
+        if(len == 1) return sentence;
+        Trie node = new Trie();
+        StringBuilder sb = new StringBuilder();
+        String[] arr = sentence.split(" ");
+        for(String str : dictionary){
+            node.insert(str);
+        }
+        for(int i = 0; i < arr.length; i++){
+            String temp = node.search(arr[i]);
+            if(temp == null){
+                sb.append(arr[i] + " ");
+            }else{
+                sb.append(temp + " ");
+            }
+        }
+        return sb.toString().trim();
+    }
+
+    class Trie{
+        boolean isWord;
+        Trie[] child;
+        public Trie(){
+            isWord = false;
+            child = new Trie[26];
+        }
+        
+        void insert(String word){
+            int n = word.length();
+            Trie node = this;
+            for(int i = 0; i < n; i++){
+                int index = word.charAt(i) - 'a';
+                if(node.child[index] == null) node.child[index] = new Trie();
+                node = node.child[index];
+            }
+            node.isWord = true;
+        }
+
+        String search(String word){
+            int n = word.length();
+            Trie node = this;
+            StringBuilder sb = new StringBuilder();
+            for(int i = 0; i < n; i++){
+                if(node.isWord) break;
+                int index = word.charAt(i) - 'a';
+                if(node.child[index] == null) return null;//如果有最短能匹配上的就已经break了,能走进这步代表没有能匹配上的
+                sb.append(word.charAt(i));
+                node = node.child[index];
+            }
+            return sb.toString();
+        }
+    }
+}
+```
+
 
